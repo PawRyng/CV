@@ -1,0 +1,150 @@
+{
+  "en": {
+    "Resume": "Resume",
+    "Protfolio": "Portfolio",
+    "Contact": "Contacts",
+    "title": "I'm",
+    "life": "Based in",
+    "footer": "All rights reserve",
+    "aboutMe": {
+      "title": "About Me",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed semper sed nulla quis mattis. Ut rhoncus massa est, vitae imperdiet nisl tincidunt vel. Nullam vitae ex sit amet lorem finibus maximus viverra non lacus. Donec tempus convallis cursus. Mauris id urna scelerisque, blandit est quis, lacinia orci. Sed magna orci, blandit ut consequat dignissim, semper quis dui. Fusce egestas sem at sapien consectetur semper.",
+      "Name": "Name",
+      "Age": "Age",
+      "Job": "Job",
+      "CitizenShip": "Citizenship",
+      "CitizenShipCountry": "Poland",
+      "Residence": "Residence",
+      "AgeFix": "Yeras",
+      "Download": "Download"
+    },
+    "Experience": {
+      "Title": "Experience",
+      "works": [
+        {
+          "date": "2023 - Present",
+          "spec": "Front-End Developer - Unlimitech",
+          "description": "Creating new functionalities, ongoing service, creating new stores and a landing page's"
+        },
+        {
+          "date": "2021 - 2022",
+          "spec": "Operator/Programer CNC - PW Jarmet",
+          "description": "Operation of CNC machines, quality control, writing programs for machines"
+        }
+      ]
+    },
+    "Education": {
+      "Title": "Education",
+      "school": [
+        {
+          "date": "2021 - Present",
+          "spec": "Silesian University of technology - Computer Sciences",
+          "description": "Faculty of Applied Mathematics and Computer Science (extramural)"
+        },
+        {
+          "date": "2017 - 2021",
+          "spec": "Technical School No. 2 Jan Długosz in Wieluń",
+          "description": "Computer science technician. I got two qualifications of EE.08 and EE.09. I was take participation in an extracurricular activity in programming."
+        }
+      ]
+    },
+    "DesignSkills": "Design Skills",
+    "LanguageSkill": {
+      "title": "Language Skill",
+      "Lang": [
+        { "Name": "Polish", "shrot": "pl" },
+        { "Name": "English", "shrot": "en" },
+        { "Name": "Deutshland", "shrot": "de" }
+      ]
+    },
+    "TechSkill": "Technical Skill"
+  },
+  "pl": {
+    "Resume": "O mnie",
+    "Protfolio": "Portfolio",
+    "Contact": "Kontakt",
+    "title": "Jestem",
+    "life": "Zamieszkanie:",
+    "footer": "Wszelkie prawa zastrzeżone",
+    "aboutMe": {
+      "title": "O mnie",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed semper sed nulla quis mattis. Ut rhoncus massa est, vitae imperdiet nisl tincidunt vel. Nullam vitae ex sit amet lorem finibus maximus viverra non lacus. Donec tempus convallis cursus. Mauris id urna scelerisque, blandit est quis, lacinia orci. Sed magna orci, blandit ut consequat dignissim, semper quis dui. Fusce egestas sem at sapien consectetur semper.",
+      "Name": "Imię",
+      "Age": "Wiek",
+      "Job": "Praca",
+      "CitizenShip": "Obywatelstwo",
+      "CitizenShipCountry": "Polska",
+      "Residence": "Zamieszkanie",
+      "AgeFix": "Lata",
+      "Download": "Pobierz"
+    },
+    "Experience": {
+      "Title": "Doświadczenie",
+      "works": [
+        {
+          "date": "2023 - Obecnie",
+          "spec": "Front-End Developer - Unlimitech",
+          "description": "Tworzenie nowych funkcjonalności, obsługa bierząca, tworzenie nowych sklepów oraz landing-page  "
+        },
+        {
+          "date": "2021 - 2022",
+          "spec": "Operator/Programista CNC - PW Jarmet",
+          "description": "Obsługa maszyn CNC, kontrola jakości, pisanie programów do maszyn"
+        }
+      ]
+    },
+    "Education": {
+      "Title": "Edukacja",
+      "school": [
+        {
+          "date": "2021 - Obecnie",
+          "spec": "Politechnika Śląska - Informatyka",
+          "description": "Wydział Matematyki Stosowanej Informatyka(zaoczne) "
+        },
+        {
+          "date": "2017 - 2021",
+          "spec": "Zespół Szkół nr 2 im. Jana Długosza w Wieluniu",
+          "description": "Technik o specjalizacji informatyk. Uzyskałem dwie kwalifikacje EE.08 i EE.09. Brałem udział w zajęciach pozalekcyjnych z programowania."
+        }
+      ]
+    },
+    "DesignSkills": "Programy graficzne",
+    "LanguageSkill": {
+      "title": "Języki",
+      "Lang": [
+        { "Name": "Polski", "shrot": "pl" },
+        { "Name": "Angielski", "shrot": "en" },
+        { "Name": "Niemiecki", "shrot": "de" }
+      ]
+    },
+    "TechSkill": "Umiejętności techniczne"
+  },
+  "Links": {
+    "Linkedin": "https://pl.linkedin.com/",
+    "Instagram": "https://www.instagram.com/",
+    "Git": "https://github.com/"
+  },
+  "personalist": {
+    "firstName": "Paweł",
+    "secondName": " Ryng",
+    "Age": "22",
+    "Job": "Front-End Developer",
+    "residence": "Opole",
+    "Email": "p_ryng@wp.pl"
+  },
+  "DesignSkills": [
+    { "title": "Adobe XD", "level": "50", "icon": "XD" },
+    { "title": "Figma", "level": "70", "icon": "Figma" }
+  ],
+  "Languages": [
+    { "short": "pl", "Level": 10 },
+    { "short": "en", "Level": 5 },
+    { "short": "de", "Level": 1 }
+  ],
+  "TechSkill": [
+    { "Title": "PHP", "Level": 10 },
+    { "Title": "JS", "Level": 50 },
+    { "Title": "HTML/CSS", "Level": 80 },
+    { "Title": "Atomstore", "Level": 0 }
+  ]
+}

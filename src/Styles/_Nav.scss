@@ -1,0 +1,125 @@
+.containerTop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  box-sizing: border-box;
+  padding: 0 6vw;
+  z-index: 3;
+  padding-top: 20px;
+  background-color: white;
+  height: auto;
+  .flagContainer {
+    z-index: 4;
+    &__button {
+      margin: 10px;
+      width: 30px;
+      height: 30px;
+      background-color: transparent;
+      box-shadow: none;
+      border: none;
+      cursor: pointer;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .navigation__hamburger {
+      display: none;
+      background-color: transparent;
+      border: none;
+      box-shadow: none;
+      font-size: 25px;
+    }
+
+    .navigation__menu {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+
+      .navigation__menu-item {
+        color: #363636;
+        text-decoration: none;
+        font-size: 13px;
+        letter-spacing: 0;
+        padding: 10px 30px;
+        margin: 10px 0;
+        transition: 0.5s;
+        a {
+          color: black;
+          text-decoration: none;
+        }
+        &:hover {
+          color: #f26b38;
+        }
+        z-index: 4;
+        &:last-of-type {
+          border: 1px solid #dddddd;
+
+          &:hover {
+            background-color: #f26b38;
+            color: white;
+            border-color: #f26b38;
+          }
+        }
+      }
+      // opacity: 0;
+
+      &--open {
+        display: flex !important;
+        opacity: 1 !important;
+        z-index: 1;
+        a {
+          display: block;
+          pointer-events: all;
+        }
+      }
+    }
+
+    @media (max-width: 700px) {
+      .navigation__menu {
+        opacity: 0;
+        transition: 1s;
+        background-color: white;
+        // display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        text-align: center;
+        padding-top: 25%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        &-item {
+          pointer-events: none;
+        }
+      }
+
+      .navigation__hamburger {
+        display: block;
+        z-index: 4;
+      }
+    }
+    @media (max-width: 700px) And (orientation: landscape) {
+      .navigation__menu {
+        padding-top: 10%;
+      }
+    }
+  }
+}
