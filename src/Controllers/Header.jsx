@@ -6,7 +6,8 @@ import { Link, useLocation, redirect } from "react-router-dom";
 
 import { ReactComponent as Mause } from "../IMG's/FontAwesomeIcons/Mause.svg";
 const Header = ({ lang, mause = false, isMenuOpen, setloading, smoooth }) => {
-  let { pathname } = useLocation();
+  let location = useLocation();
+  console.log(location);
   const [mauseVisable, setMauseVisable] = useState(mause);
   const [flag, setFlag] = useState(false);
 
@@ -44,7 +45,7 @@ const Header = ({ lang, mause = false, isMenuOpen, setloading, smoooth }) => {
     return (
       <Link
         className="buttonsNavigation__item"
-        onClick={() => changeWebChandler(pathname)}
+        onClick={() => changeWebChandler(location)}
       >
         <Typewriter
           options={{
@@ -54,7 +55,7 @@ const Header = ({ lang, mause = false, isMenuOpen, setloading, smoooth }) => {
             cursor: "",
           }}
           onInit={(typewritter) => {
-            typewritter.typeString(pathname.slice(1)).start();
+            typewritter.typeString(location.slice(1)).start();
           }}
         />
       </Link>
