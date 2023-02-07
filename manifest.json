@@ -1,6 +1,6 @@
 {
-  "short_name": "CV PR",
-  "name": "Paweł Ryng cv Page",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
       "src": "favicon.ico",
