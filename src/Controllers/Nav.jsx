@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink, redirect } from "react-router-dom";
+import { Link, Navigate, NavLink, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
 
@@ -16,6 +16,8 @@ const Navigation = ({
   isMenuOpen,
   setIsMenuOpen,
 }) => {
+  const navigate = useNavigate();
+
   const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -24,8 +26,8 @@ const Navigation = ({
       document.querySelector(".App").classList.remove("App--active");
     }
     setTimeout(() => {
-      redirect(navigateLocation);
       setloading(false);
+      navigate(navigateLocation);
     }, 1000);
   };
 
@@ -61,24 +63,24 @@ const Navigation = ({
             isMenuOpen ? "navigation__menu--open" : ""
           }`}
         >
-          <NavLink
+          <a
             className={"navigation__menu-item"}
             onClick={() => changeWebChandler("About")}
           >
             {lang.Resume}
-          </NavLink>
-          <NavLink
+          </a>
+          <a
             className={"navigation__menu-item"}
             onClick={() => changeWebChandler("Portfolio")}
           >
             {lang.Protfolio}
-          </NavLink>
-          <NavLink
+          </a>
+          <a
             className={"navigation__menu-item"}
             onClick={() => changeWebChandler("Contact")}
           >
             {lang.Contact}
-          </NavLink>
+          </a>
         </ul>
       </nav>
     </div>

@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Typewriter from "typewriter-effect";
-import { Link, useLocation, redirect } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 //svg
 
 import { ReactComponent as Mause } from "../IMG's/FontAwesomeIcons/Mause.svg";
 const Header = ({ lang, mause = false, isMenuOpen, setloading, smoooth }) => {
   let location = useLocation();
-  console.log(location);
+  const navigate = useNavigate();
   const [mauseVisable, setMauseVisable] = useState(mause);
   const [flag, setFlag] = useState(false);
 
@@ -43,9 +43,9 @@ const Header = ({ lang, mause = false, isMenuOpen, setloading, smoooth }) => {
 
   const linksUnder = () => {
     return (
-      <Link
+      <a
         className="buttonsNavigation__item"
-        onClick={() => changeWebChandler(location)}
+        onClick={() => changeWebChandler(location.pathname)}
       >
         <Typewriter
           options={{
@@ -55,10 +55,10 @@ const Header = ({ lang, mause = false, isMenuOpen, setloading, smoooth }) => {
             cursor: "",
           }}
           onInit={(typewritter) => {
-            typewritter.typeString(location.slice(1)).start();
+            typewritter.typeString(location.pathname.slice(1)).start();
           }}
         />
-      </Link>
+      </a>
     );
   };
 
@@ -67,7 +67,7 @@ const Header = ({ lang, mause = false, isMenuOpen, setloading, smoooth }) => {
       document.querySelector(".App").classList.remove("App--active");
     }
     setTimeout(() => {
-      redirect(path);
+      navigate(path);
       setloading(false);
     }, 1000);
   };
@@ -79,7 +79,7 @@ const Header = ({ lang, mause = false, isMenuOpen, setloading, smoooth }) => {
         <span aria-hidden="true">{lang.title}</span>
       </h1>
       <div className="buttonsNavigation">
-        <Link
+        <a
           className="buttonsNavigation__item"
           onClick={() => changeWebChandler("/")}
         >
@@ -97,7 +97,7 @@ const Header = ({ lang, mause = false, isMenuOpen, setloading, smoooth }) => {
                 .start();
             }}
           />
-        </Link>
+        </a>
         /{flag && linksUnder()}
       </div>
       {mauseContainer()}
