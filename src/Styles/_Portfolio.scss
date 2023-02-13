@@ -1,0 +1,17 @@
+.portfolio {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 20vh;
+  &__title {
+    @include title;
+    margin-bottom: 30px;
+  }
+  &Items {
+    &__item {
+      display: none;
+      &--active {
+        display: block;
+      }
+    }
+  }
+}

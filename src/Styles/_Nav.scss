@@ -1,3 +1,5 @@
+@use "./Variables" as *;
+
 .containerTop {
   position: fixed;
   top: 0;
@@ -59,21 +61,29 @@
         padding: 10px 30px;
         margin: 10px 0;
         transition: 0.5s;
+        &--active {
+          color: $mainColor;
+        }
         a {
           color: black;
           text-decoration: none;
         }
         &:hover {
-          color: #f26b38;
+          color: $mainColor;
         }
         z-index: 4;
         &:last-of-type {
           border: 1px solid #dddddd;
+          &.navigation__menu-item--active {
+            background-color: $mainColor;
+            color: white;
+            border: none;
+          }
 
           &:hover {
-            background-color: #f26b38;
+            background-color: $mainColor;
             color: white;
-            border-color: #f26b38;
+            border-color: $mainColor;
           }
         }
       }

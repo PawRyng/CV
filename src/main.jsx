@@ -11,15 +11,13 @@ import Home from "./Controllers/Home";
 import Nav from "./Controllers/Nav";
 import Footer from "./Controllers/Footer";
 import Resume from "./Controllers/Resume";
-
-//img's
-import polFlag from "./IMG's/FlagsIcon/poland.png";
-import engFlag from "./IMG's/FlagsIcon/united-states.png";
+import Contact from "./Controllers/Contact";
+import Portfolio from "./Controllers/Portfolio";
 
 //translations
 import translations from "./Other/translate.json";
 
-const Main = ({ setloading }) => {
+const Main = ({ setloading, git, photos, youtube }) => {
   const navigate = useNavigate();
   const [language, setLanguage] = useState(
     window.localStorage.getItem("language")
@@ -68,8 +66,31 @@ const Main = ({ setloading }) => {
               />
             }
           />
-          <Route path="/Portfolio" element={<p>Portfolio</p>} />
-          <Route path="/Contact" element={<p>Contact</p>} />
+          <Route
+            path="/Portfolio"
+            element={
+              <Portfolio
+                lang={lang.PortfolioContent}
+                isMenuOpen={isMenuOpen}
+                personalist={personalist}
+                setloading={setloading}
+                git={git}
+                photos={photos}
+                youtube={youtube}
+              />
+            }
+          />
+          <Route
+            path="/Contact"
+            element={
+              <Contact
+                lang={lang.ContactContent}
+                isMenuOpen={isMenuOpen}
+                personalist={personalist}
+                setloading={setloading}
+              />
+            }
+          />
         </Routes>
       </div>
       <Footer trans={translations} langg={lang} />

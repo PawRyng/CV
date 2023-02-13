@@ -17,7 +17,10 @@ export default function loading({ setloading }) {
           typewritter
             .typeString("loading...")
             .callFunction(() => {
-              document.querySelector(`.${wrapperClass}`).style = "opacity:0;";
+              const element = document.querySelector(`.${wrapperClass}`);
+              if (element) {
+                element.style = "opacity:0;";
+              }
               setTimeout(() => {
                 setloading(true);
               }, 500);

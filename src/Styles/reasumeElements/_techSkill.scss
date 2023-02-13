@@ -14,12 +14,11 @@ $item-size: 130px;
     margin-bottom: 30px;
   }
   &-item {
-    width: $item-size;
+    width: 100px;
     height: $item-size;
     transform: rotate(270deg);
     border: none;
     margin: 10px 30px;
-
     svg {
       position: relative;
       width: $item-size;
@@ -50,6 +49,13 @@ $item-size: 130px;
           font-size: 30px;
         }
       }
+    }
+  }
+}
+@media (max-width: 555px) {
+  .TechSkill {
+    &-container {
+      justify-content: center;
     }
   }
 }

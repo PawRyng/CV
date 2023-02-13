@@ -57,7 +57,28 @@
         { "Name": "Deutshland", "shrot": "de" }
       ]
     },
-    "TechSkill": "Technical Skill"
+    "TechSkill": "Technical Skill",
+    "ContactContent": {
+      "title": "Contact",
+      "content": [
+        {
+          "title": "Phone",
+          "content": "695 001 696"
+        },
+        {
+          "title": "E-mail",
+          "content": "p_ryng@wp.pl"
+        }
+      ]
+    },
+    "PortfolioContent": {
+      "title": "Portfolio",
+      "search": [
+        { "title": "All", "sign": "All" },
+        { "title": "Music", "sign": "Music" },
+        { "title": "github", "sign": "Pages" }
+      ]
+    }
   },
   "pl": {
     "Resume": "O mnie",
@@ -117,12 +138,33 @@
         { "Name": "Niemiecki", "shrot": "de" }
       ]
     },
-    "TechSkill": "Umiejętności techniczne"
+    "TechSkill": "Umiejętności techniczne",
+    "ContactContent": {
+      "title": "Kontakt",
+      "content": [
+        {
+          "title": "Telefon",
+          "content": "695 001 696"
+        },
+        {
+          "title": "E-mail",
+          "content": "p_ryng@wp.pl"
+        }
+      ]
+    },
+    "PortfolioContent": {
+      "title": "Portfolio",
+      "search": [
+        { "title": "Wszystko", "sign": "All" },
+        { "title": "Muzyka", "sign": "Music" },
+        { "title": "Strony", "sign": "Pages" }
+      ]
+    }
   },
   "Links": {
     "Linkedin": "https://pl.linkedin.com/",
     "Instagram": "https://www.instagram.com/",
-    "Git": "https://github.com/"
+    "Git": "https://github.com/PawRyng"
   },
   "personalist": {
     "firstName": "Paweł",
@@ -146,5 +188,6 @@
     { "Title": "JS", "Level": 50 },
     { "Title": "HTML/CSS", "Level": 80 },
     { "Title": "Atomstore", "Level": 0 }
-  ]
+  ],
+  "OtherLinks": ["alKMn0Yw9xk", "e8D-NqlUJlY", "0bR_-gc3Gk8"]
 }

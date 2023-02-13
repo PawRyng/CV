@@ -1,13 +1,11 @@
 import React from "react";
-import { Link, Navigate, NavLink, useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
 
 //img's
 import polFlag from "../IMG's/FlagsIcon/poland.png";
 import engFlag from "../IMG's/FlagsIcon/united-states.png";
-
-// import "./Navigation.scss";
 
 const Navigation = ({
   lang,
@@ -17,6 +15,7 @@ const Navigation = ({
   setIsMenuOpen,
 }) => {
   const navigate = useNavigate();
+  const location = useLocation();
 
   const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -64,19 +63,31 @@ const Navigation = ({
           }`}
         >
           <a
-            className={"navigation__menu-item"}
+            className={`navigation__menu-item ${
+              location.pathname.substring(1) == "About"
+                ? "navigation__menu-item--active"
+                : ""
+            }`}
             onClick={() => changeWebChandler("About")}
           >
             {lang.Resume}
           </a>
           <a
-            className={"navigation__menu-item"}
+            className={`navigation__menu-item ${
+              location.pathname.substring(1) == "Portfolio"
+                ? "navigation__menu-item--active"
+                : ""
+            }`}
             onClick={() => changeWebChandler("Portfolio")}
           >
             {lang.Protfolio}
           </a>
           <a
-            className={"navigation__menu-item"}
+            className={`navigation__menu-item ${
+              location.pathname.substring(1) == "Contact"
+                ? "navigation__menu-item--active"
+                : ""
+            }`}
             onClick={() => changeWebChandler("Contact")}
           >
             {lang.Contact}

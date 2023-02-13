@@ -5,16 +5,14 @@
   width: 90%;
   display: flex;
   flex-wrap: wrap;
-  margin: 0px auto 10vh;
+  margin: 0px auto 20vh;
   &__title {
     @include title;
   }
   &-item {
     width: 50%;
     margin: 1rem 0;
-    min-width: 300px;
-    max-width: 530px;
-    padding-right: 40px;
+    min-width: 310px;
     &__Name {
       // nazwa jezyka
       font-size: 14px;
@@ -44,7 +42,7 @@
     justify-content: center;
     &-item {
       width: 50%;
-      margin: 1rem 0;
+      margin: 1rem 10px;
       min-width: 310px;
 
       &-dots {
