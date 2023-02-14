@@ -1,4 +1,4 @@
-import React from "react";
+import { useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
@@ -16,9 +16,21 @@ const Navigation = ({
 }) => {
   const navigate = useNavigate();
   const location = useLocation();
+  const [test, setTest] = useState(false);
 
   const handleMenuToggle = () => {
-    setIsMenuOpen(!isMenuOpen);
+    if (!isMenuOpen) {
+      console.log("r");
+      setTest(!test);
+      setTimeout(() => {
+        setIsMenuOpen(!isMenuOpen);
+      }, 10);
+    } else {
+      setIsMenuOpen(!isMenuOpen);
+      setTimeout(() => {
+        setTest(!test);
+      }, 700);
+    }
   };
   const changeWebChandler = (navigateLocation) => {
     if (document.querySelector(".App--active") != null) {
@@ -60,7 +72,7 @@ const Navigation = ({
         <ul
           className={`navigation__menu ${
             isMenuOpen ? "navigation__menu--open" : ""
-          }`}
+          } ${test ? "navigation__menu--display" : ""}`}
         >
           <a
             className={`navigation__menu-item ${

@@ -1,3 +1,5 @@
+@use "Variables" as *;
+
 .portfolio {
   width: 90%;
   margin: 0 auto;
@@ -6,11 +8,75 @@
     @include title;
     margin-bottom: 30px;
   }
+  &-Search {
+    display: flex;
+    &__item {
+      padding: 10px 20px;
+      list-style: none;
+      cursor: pointer;
+
+      &--active {
+        color: $mainColor;
+      }
+    }
+  }
   &Items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 30px;
+    &__image {
+      width: 200px;
+      height: 200px;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    &__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      p {
+        padding-top: 5px;
+        font-size: 12px;
+        display: block;
+        &:first-of-type {
+          position: relative;
+          text-transform: uppercase;
+          &::after {
+            z-index: -1;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: block;
+            content: " ";
+            width: auto;
+            height: 4px;
+            background-color: rgb(237, 229, 116);
+          }
+          letter-spacing: 1.5px;
+          font-size: 10px;
+        }
+        &:last-of-type {
+          font-weight: 500;
+          letter-spacing: 1px;
+        }
+      }
+    }
     &__item {
       display: none;
+      margin: 5px 10px;
+
       &--active {
+        width: 200px;
+        height: 250px;
         display: block;
+        a {
+          color: black;
+          text-decoration: none;
+        }
       }
     }
   }

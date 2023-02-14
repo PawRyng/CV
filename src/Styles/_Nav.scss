@@ -105,7 +105,6 @@
         opacity: 0;
         transition: 1s;
         background-color: white;
-        // display: none;
         position: absolute;
         top: 0;
         left: 0;
@@ -116,6 +115,12 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
+        display: none;
+
+        &--display {
+          display: flex;
+        }
+
         &-item {
           pointer-events: none;
         }

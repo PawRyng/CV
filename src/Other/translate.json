@@ -76,7 +76,7 @@
       "search": [
         { "title": "All", "sign": "All" },
         { "title": "Music", "sign": "Music" },
-        { "title": "github", "sign": "Pages" }
+        { "title": "GitHub", "sign": "Pages" }
       ]
     }
   },
@@ -157,7 +157,7 @@
       "search": [
         { "title": "Wszystko", "sign": "All" },
         { "title": "Muzyka", "sign": "Music" },
-        { "title": "Strony", "sign": "Pages" }
+        { "title": "GitHub", "sign": "Pages" }
       ]
     }
   },
@@ -189,5 +189,5 @@
     { "Title": "HTML/CSS", "Level": 80 },
     { "Title": "Atomstore", "Level": 0 }
   ],
-  "OtherLinks": ["alKMn0Yw9xk", "e8D-NqlUJlY", "0bR_-gc3Gk8"]
+  "OtherLinks": ["eY_Z5MyRgHw", "CShSTcXATm4"]
 }
