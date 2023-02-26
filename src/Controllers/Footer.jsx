@@ -13,19 +13,21 @@ const Footer = ({ trans, langg }) => {
       <footer className="footer">
         <p className="footer__coppy">© 2023 Paweł_CV. {langg.footer}</p>
         <div className="footer__container">
+        <a href={trans.Links.Instagram} target="_blank" rel="noopener noreferrer">
           <Git
             className="footer__item"
-            onClick={() => (window.location = trans.Links.Git)}
           />
-
+          </a>
+        <a href={trans.Links.Instagram} target="_blank" rel="noopener noreferrer">
           <Linkedin
             className="footer__item"
-            onClick={() => (window.location = trans.Links.Linkedin)}
           />
+          </a>
+          <a href={trans.Links.Instagram} target="_blank" rel="noopener noreferrer">
           <Insta
             className="footer__item"
-            onClick={() => (window.location = trans.Links.Instagram)}
           />
+          </a>
         </div>
       </footer>
     </>

@@ -62,7 +62,7 @@ export default function Portfolio({
                   : ""
               }`}
             >
-              <a href={item.html_url || `https://youtu.be/${item.id}`}>
+              <a href={item.html_url || `https://youtu.be/${item.id}`} target="_blank">
                 <div
                   className="portfolioItems__image"
                   style={{

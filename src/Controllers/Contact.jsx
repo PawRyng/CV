@@ -17,7 +17,7 @@ export default function Contact({ lang, personalist, isMenuOpen, setloading }) {
         smoooth="contact"
       />
 
-      <div className="contact" id="">
+      <div className="contact" id="contact">
         <div className="contact__title">
           <h2>{lang.title}</h2>
         </div>
